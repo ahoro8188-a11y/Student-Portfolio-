@@ -1,0 +1,220 @@
+/* ===== RESET & BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    padding: 30px 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 24px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+}
+
+/* ===== HERO / NAME ===== */
+.hero {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.name {
+    font-size: 48px;
+    font-weight: 800;
+    color: #1a1a2e;
+    letter-spacing: -1px;
+}
+
+.subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    color: #888;
+    margin-top: 6px;
+}
+
+/* ===== BIO ===== */
+.bio h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 12px;
+}
+
+.bio h2 .highlight {
+    color: #ff6b8a;
+}
+
+.bio p {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 14px;
+    font-weight: 300;
+}
+
+/* ===== SECTION TITLES ===== */
+h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin: 40px 0 16px 0;
+    letter-spacing: -0.5px;
+}
+
+/* ===== EXPERIENCE CARDS ===== */
+.exp-card {
+    background: #fafafa;
+    padding: 18px 22px;
+    border-radius: 16px;
+    margin-bottom: 16px;
+    border-left: 4px solid #4a9eff;
+    transition: 0.2s;
+}
+
+.exp-card:hover {
+    background: #f0f0f0;
+}
+
+.exp-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a2e;
+}
+
+.exp-card .company {
+    font-weight: 500;
+    color: #4a9eff;
+    font-size: 15px;
+}
+
+.exp-card .date {
+    font-size: 13px;
+    color: #999;
+    margin: 2px 0 8px 0;
+}
+
+.exp-card .desc {
+    font-size: 14px;
+    color: #555;
+    font-weight: 300;
+}
+
+/* ===== BADGES ===== */
+.badge-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.badge {
+    display: inline-block;
+    background: #1a1a2e;
+    color: #fff;
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+.badge:nth-child(2) {
+    background: #4a9eff;
+}
+.badge:nth-child(3) {
+    background: #ff6b8a;
+}
+.badge:nth-child(4) {
+    background: #ffb347;
+}
+.badge:nth-child(5) {
+    background: #6c5ce7;
+}
+.badge:nth-child(6) {
+    background: #00b894;
+}
+
+/* ===== CONTACT ===== */
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 10px;
+}
+
+.contact-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #f5f5f5;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.contact-links a:hover {
+    background: #1a1a2e;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.contact-links a i {
+    font-size: 16px;
+    color: #4a9eff;
+}
+
+.contact-links a:hover i {
+    color: #fff;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+    .container {
+        padding: 25px 18px;
+    }
+
+    .name {
+        font-size: 34px;
+    }
+
+    .bio h2 {
+        font-size: 20px;
+    }
+
+    .exp-card {
+        padding: 14px 16px;
+    }
+
+    .badge {
+        font-size: 12px;
+        padding: 5px 14px;
+    }
+
+    .contact-links a {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+}
